@@ -148,20 +148,21 @@ with gr.Blocks(title="Sidekick", fill_width=True) as ui:
     # Main Content Area: Chat and Plan Panel
     with gr.Row(equal_height=True):
         chatbot = gr.Chatbot(
-            label="Conversation",
-            height=520,
-            scale=3,
-            elem_id="chat",
-            type="messages",
-            show_copy_button=True,
-            placeholder=(
-                "<div style='text-align: center; padding: 40px; color: #94A3B8;'>"
-                "<h3 style='color: #0F172A; margin-bottom: 8px; font-family: Inter, sans-serif;'>"
-                "Ready to assist</h3>"
-                "<p style='font-family: Inter, sans-serif;'>Type your request below to get started.</p>"
-                "</div>"
-            ),
-        )
+                label="Conversation",
+                height=520,
+                scale=3,
+                elem_id="chat",
+                buttons=["copy"],
+                placeholder=(
+                    "<div style='text-align: center; padding: 40px; color: #94A3B8;'>"
+                    "<h3 style='color: #0F172A; margin-bottom: 8px; font-family: Inter, sans-serif;'>"
+                    "Ready to assist</h3>"
+                    "<p style='font-family: Inter, sans-serif;'>"
+                    "Type your request below to get started."
+                    "</p>"
+                    "</div>"
+                ),
+            )
 
         with gr.Column(scale=1, min_width=300):
             todos_panel = gr.HTML(
