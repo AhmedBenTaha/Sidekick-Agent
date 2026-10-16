@@ -1,4 +1,3 @@
-::: {align="center"}
 # ⚡ Sidekick
 
 ### Your personal AI co-worker --- built to plan, act, and ask when it matters.
@@ -266,14 +265,9 @@ reporting a bug, include:
 3.  A redacted error traceback.
 4.  Relevant MCP configuration with all secrets removed.
 
-## 📄 License
-
-No license has been specified here. Add a `LICENSE` file before
-presenting the repository as open source, and choose a license that
-matches how you want others to use the project.
 
 ------------------------------------------------------------------------
 
-::: {align="center"}
+
 **Sidekick** · Plan clearly. Act carefully. Keep a human in the loop.
-:::
+
